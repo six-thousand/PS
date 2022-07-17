@@ -2,7 +2,7 @@ package greedy
 
 import java.util.*
 
-fun solution(intervals: ArrayList<Pair<Int, Int>>): Int {
+private fun solution(intervals: ArrayList<Pair<Int, Int>>): Int {
     intervals.sortWith(compareBy({ it.second }, { it.first }))
     var result = 0
     var endTime = 0
